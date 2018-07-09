@@ -1,23 +1,23 @@
 #!/bin/bash
 
-CONFIG_FILE='rabbit.conf'
-CONFIGFOLDER='/root/.Rabbitcore'
-CONFIGFOLDER2='/root/.Rabbitcore2'
-CONFIGFOLDER3='/root/.Rabbitcore3'
-COIN_DAEMON='/root/rab-ip-install/Rabbitd'
-COIN_CLI='/root/rab-ip-install/Rabbit-cli'
-COIN_DAEMON2='Rabbitd'
-COIN_CLI2='Rabbit-cli'
+CONFIG_FILE='drip.conf'
+CONFIGFOLDER='/root/.drip'
+CONFIGFOLDER2='/root/.drip2'
+CONFIGFOLDER3='/root/.drip3'
+COIN_DAEMON='/root/drip-ip-install/drip-1.0.2/dripd'
+COIN_CLI='/root/drip-ip-install/drip-1.0.2/drip-cli'
+COIN_DAEMON2='dripd'
+COIN_CLI2='drip-cli'
 COIN_PATH='/usr/local/bin/'
-COIN_TGZ='https://github.com/RabbitcoreDEV/RabbitCore/releases/download/V1.0.2.2/RabbitCore-v1.0.2.2-linux64.tar.gz'
-COIN_ZIP='/root/rab-ip-install/RabbitCore-v1.0.2.2-linux64.tar.gz'
-COIN_NAME='rabbit'
-COIN_NAME2='rabbit2'
-COIN_NAME3='rabbit3'
-COIN_PORT=1128
-RPC_PORT=1126
-RPC_PORT2=1125
-RPC_PORT3=1127
+COIN_TGZ='https://github.com/DRIP-Project/DRIP/releases/download/v1.0.2.4/drip-1.0.2-x86_64-linux-gnu.tar.gz'
+COIN_ZIP='/root/drip-ip-install/drip-1.0.2-x86_64-linux-gnu.tar.gz'
+COIN_NAME='drip'
+COIN_NAME2='drip2'
+COIN_NAME3='drip3'
+COIN_PORT=21461
+RPC_PORT=5551
+RPC_PORT2=5552
+RPC_PORT3=5553
 
 NODEIP=$(curl -s4 api.ipify.org)
 NODEIP2=$(curl -s4 api.ipify.org)
