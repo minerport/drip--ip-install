@@ -28,6 +28,19 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
+#begin optional swap section
+echo "Setting up disk swap..."
+free -h
+sudo fallocate -l 4G /swapfile
+ls -lh /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab sudo bash -c "
+echo 'vm.swappiness = 10' >> /etc/sysctl.conf"
+free -h
+echo "SWAP setup complete..."
+#end optional swap section
 
 function download_node() {
   echo -e "Preparing to download ${GREEN}$COIN_NAME${NC}."
